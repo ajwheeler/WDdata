@@ -1,4 +1,4 @@
-Data from Wheeler & Kipping 201?.  Find our code at [github.com/ajwheeler/sebastien](github.com/ajwheeler/sebastien)
+Data from Wheeler & Kipping 2019.  Find our code at [github.com/ajwheeler/sebastien](github.com/ajwheeler/sebastien)
 
 - `detections.csv` contains the period with the highest zeta value (merit function) for each KIC we analyzed.  The `is_known` column is true for KICs we threw out in our analysis , i.e. those in the Villanova eclipsing binary catalog (Kirk et al. 2016; Abdul-Masih et al. 2016), Kepler KOIs and TCEs (Thompson et al. 2018), the candidates from (Huang et al. 2013), the long-period candidates from the wavelet-based search of Foreman-Mackey et al. (2016) and planet hunters (Wang et al. 2015), and the ultra-short period planets in Sanchis Ojeda et al. (2015)
 
