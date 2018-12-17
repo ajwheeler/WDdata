@@ -16,7 +16,9 @@ Data from Wheeler & Kipping 2019.  Find our code at [github.com/ajwheeler/sebast
 `t0` (as well at `t1` and `t2`, the epochs of KIC 8508736) was given a uniform prior of width `0.04 days` centered on the approximate transit epoch.  This is much wider 
 than the posterior standard deviation.
 
-The applied prior was uniform in the sampling parameters listed below.  
+We sample uniformly in `log(rho)`, but apply a skewed-normal prior from Mathur+2018 as a penalty to the log-likelihood (see equation 10 in the paper for details).
+
+The applied prior was uniform in the remaining sampling parameters, with bounds listed below.  
 
 | parameter | lower bound | upper bound |
 | :--       | :--         | :--         |
