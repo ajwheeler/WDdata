@@ -11,3 +11,22 @@ Data from Wheeler & Kipping 2019.  Find our code at [github.com/ajwheeler/sebast
   * the parameters for KIC 7947784 are ` ["$t_1$", "$R_1/R_*$", "$\log(P_1)$", "$b_1$", "$A_1$", "$B_1$", "$t_2$", "$R_2/R_*$","$\log(P_2)$", "$b_2$", "$A_2$", "$B_2$", "$\\log(\\rho_*)$", "$q_1$", "$q_2$"]`
 
   * the parameters for KIC 8508736 are `["$t_1$", "$t_2$", "$R_p$", "$a$", "$b$", "$q_1$", "$q_2$"]`
+
+# Priors
+`t0` (as well at `t1` and `t2`, the epochs of KIC 8508736) was given a uniform prior of width `0.04 days` centered on the approximate transit epoch.  This is much wider 
+than the posterior standard deviation.
+
+The applied prior was uniform in the sampling parameters listed below.  
+
+| parameter | lower bound | upper bound |
+| :--       | :--         | :--         |
+| Rplanet / Rstar | 0 | 1 |
+| log(P / 1 day) | 2.7 | 6 |
+| b | 0 | 1 |
+| log(rho / (g/cc)) | -7 | 2 | 
+| q1 | 0 | 1 |
+| q2 | 0 | 1 | 
+| A | -0.02 | 0.02 |
+| B | -0.02 | 0.02 |
+| cos(w) | -1 | 1 |
+| sqrt(e)sin(w) | 0 | 1 |
