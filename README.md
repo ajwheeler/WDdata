@@ -13,8 +13,7 @@ Data from Wheeler & Kipping 2019.  Find our code at [github.com/ajwheeler/sebast
   * the parameters for KIC 8508736 are `["$t_1$", "$t_2$", "$R_p$", "$a$", "$b$", "$q_1$", "$q_2$"]`
 
 # Priors
-`t0` (as well at `t1` and `t2`, the epochs of KIC 8508736) was given a uniform prior of width `0.04 days` centered on the approximate transit epoch.  This is much wider 
-than the posterior standard deviation.
+`t0` (as well at `t1` and `t2`, the epochs of KIC 8508736) was given a uniform prior of width `0.04 days` centered on the approximate transit epoch.  This is much wider than the posterior width for this parameter.
 
 We sample uniformly in `log(rho)`, but apply a skewed-normal prior from Mathur+2018 as a penalty to the log-likelihood (see equation 10 in the paper for details).
 
